@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  margin-top: 10px;
+  font-family: "josefin sans", sans-serif;
+}
+span {
+  color: #781d1d;
+  font-family: "josefin sans", sans-serif;
+}
+.contenedorprincipal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+.caja {
+  display: flex;
+}
+
+/*imagenproducto*/
+
+.imagenproducto {
+  width: 380px;
+  height: auto;
+  min-width: 300px;
+  margin-top: 30px;
+}
+
+.imagen {
+  width: 380px;
+  height: auto;
+  padding: 20px;
+
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/*imagenproducto END*/
+
+/*lineasepa*/
+
+.lineasepa {
+  display: flex;
+  width: 40px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.linea {
+  width: 1px;
+  height: 360px;
+  background-color: #000;
+}
+
+/*lineasepa END*/
+
+/*caracteres*/
+
+.caracteres {
+  width: 400px;
+  height: auto;
+  padding: 10px;
+  margin-top: 30px;
+}
+.titulo {
+  display: flex;
+  align-items: center;
+}
+
+.titulo,
+.precio,
+.estrellas,
+.carrito {
+  width: 95%;
+  height: 100px;
+}
+.carrito {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+.carritoimg {
+  width: 70px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Estrellas */
+.estrellas {
+  width: 300px;
+  height: 70px;
+  transform: translate(0%, 0%) rotateY(180deg);
+  display: flex;
+}
+.estrellas input {
+  display: none;
+}
+
+.estrellas label {
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  margin: 0px 5px 5px 5px;
+}
+.estrellas label::before {
+  content: "\f005";
+  font-family: fontAwesome;
+  position: relative;
+  display: block;
+  font-size: 40px;
+  color: #101010;
+}
+.estrellas label::after {
+  content: "\f005";
+  font-family: fontAwesome;
+  position: absolute;
+  display: block;
+  font-size: 40px;
+  color: #fd4;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.estrellas label:hover:after,
+.estrellas input:hover ~ label:after,
+.estrellas input:checked ~ label:after {
+  opacity: 1;
+}
+
+/* Estrellas END*/
+
+/*caracteres END*/
+
+/*Descripcion */
+.descripcion {
+  width: 480px;
+  height: auto;
+  min-width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.descripcionpro h1 {
+  width: 95%;
+  height: auto;
+
+  font-size: 30px;
+  color: #584f4f;
+  text-align: center;
+}
+.titulopro h1 {
+  width: 95%;
+  height: 100px;
+
+  color: #292020;
+  text-align: center;
+}
+
+/*Descripcion END*/
+
+/*chat whatsapp*/
+
+.chat {
+  z-index: 1;
+}
+
+.api {
+  font-size: 0;
+}
+
+.icon-wts {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.icon-wts:active {
+  transform: scale(0.9);
+}
+
+.form-wts {
+  width: 220px;
+  height: 280px;
+  position: fixed;
+  background: white;
+  bottom: 80px;
+  right: 50px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
+
+.entrarysalir {
+  display: block;
+}
+
+.inputwts {
+  width: 100%;
+  padding: 5px;
+  color: #666;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+}
+
+.inputwts:focus {
+  outline: none;
+}
+
+.textareawts:focus {
+  outline: none;
+}
+
+.textareawts {
+  width: 100%;
+  min-width: 100%;
+  min-width: 100%;
+  padding: 5px;
+  color: #666;
+  height: 120px;
+  min-height: 120px;
+  max-height: 120px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+}
+
+.btn-wts {
+  width: 100%;
+  background: #00a82d;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+.main {
+  border: 1px solid #000;
+  background-color: #666;
+  width: 90%;
+  height: 50%;
+
+  display: grid;
+  grid-template-rows: 10%;
+  padding: 20px;
+}

@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: #292020;
+  font-family: "josefin sans", sans-serif;
+}
+span {
+  font-family: "josefin sans", sans-serif;
+  color: #781d1d;
+}
+.contenedorprincipal {
+  width: 100%;
+  height: auto;
+
+  padding: 10px;
+}
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  min-width: 280px;
+}
+.marcas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.presto,
+.subway,
+.donjacobo,
+.cosechas {
+  width: 250px;
+
+  margin: 20px;
+  min-width: 220px;
+}
+.marcas img {
+  width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/*chat whatsapp*/
+
+.chat {
+  z-index: 1;
+}
+
+.api {
+  font-size: 0;
+}
+
+.icon-wts {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.icon-wts:active {
+  transform: scale(0.9);
+}
+
+.form-wts {
+  width: 220px;
+  height: 280px;
+  position: fixed;
+  background: white;
+  bottom: 80px;
+  right: 50px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
+
+.entrarysalir {
+  display: block;
+}
+
+.inputwts {
+  width: 100%;
+  padding: 5px;
+  color: #666;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+}
+
+.inputwts:focus {
+  outline: none;
+}
+
+.textareawts:focus {
+  outline: none;
+}
+
+.textareawts {
+  width: 100%;
+  min-width: 100%;
+  min-width: 100%;
+  padding: 5px;
+  color: #666;
+  height: 120px;
+  min-height: 120px;
+  max-height: 120px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+}
+
+.btn-wts {
+  width: 100%;
+  background: #00a82d;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+.main {
+  border: 1px solid #000;
+  background-color: #666;
+  width: 90%;
+  height: 50%;
+
+  display: grid;
+  grid-template-rows: 10%;
+  padding: 20px;
+}

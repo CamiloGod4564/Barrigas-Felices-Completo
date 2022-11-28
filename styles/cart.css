@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+  font-family: "josefin sans", sans-serif;
+}
+span {
+  color: #781d1d;
+  font-family: "josefin sans", sans-serif;
+}
+.contenedorprincipal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* contenedor 1*/
+
+.contenedor1 {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+.titulopro {
+  width: 80%;
+  height: 120px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+/* Productos */
+
+.productostotal {
+  display: flex;
+  width: 92%;
+  height: auto;
+}
+.continer {
+  width: 100%;
+  box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.5);
+  min-width: 100px;
+}
+section div {
+  overflow: hidden;
+  max-height: 0;
+  background-color: #e4e4e4;
+  transition: all 0.2s ease-in-out;
+}
+section .a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 15px;
+  background-color: #292020;
+  color: white;
+  border-bottom: 2px solid gray;
+}
+section:target div {
+  max-height: 120px;
+  padding: 10px;
+}
+.a {
+  font-family: "josefin sans", sans-serif;
+}
+.item {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border-bottom: #000 solid 1px;
+}
+.contenedorimgtitle1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100px;
+  margin-right: 1%;
+}
+
+#image {
+  display: flex;
+  width: 90px;
+  height: auto;
+}
+.itemImage {
+  width: 80px;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-width: 1px;
+}
+#name {
+  font-family: "josefin sans", sans-serif;
+  justify-content: center;
+  width: 300px;
+  height: 80px;
+  font-size: 20px;
+}
+
+.itemPrice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "josefin sans", sans-serif;
+  font-size: 17px;
+
+  width: 35%;
+  min-width: 75px;
+}
+
+#añadir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "josefin sans", sans-serif;
+  background-color: #212121;
+  color: white;
+  width: 20%;
+  min-width: 65px;
+}
+/* Productos END*/
+
+/* contenedor 1 END*/
+
+/* contenedor 2*/
+
+.contenedor2 {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+.titulocart {
+  width: 90%;
+  height: 120px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+/* carrito */
+
+.containerShoppingCart {
+  display: flex;
+  color: #584f4f;
+  font-family: "josefin sans", sans-serif;
+  font-size: 20px;
+  margin-top: 80px;
+  width: 90%;
+  align-items: center;
+}
+.shoppingCartItem {
+  border-bottom: #292020 2px solid;
+  width: 90%;
+}
+.iniciotabla {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  border-bottom: #000 solid 1px;
+  width: 90%;
+}
+.producto,
+.precio,
+.cantidad {
+  font-size: 15px;
+  width: 33%;
+  height: auto;
+  font-family: "josefin sans", sans-serif;
+}
+.carttabla {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  font-family: "josefin sans", sans-serif;
+}
+.contenedorimgtitle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33%;
+  align-content: center;
+}
+.imgcontiner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80px;
+  height: auto;
+  min-width: 0px;
+  padding-left: 0;
+}
+.image1 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10%;
+  width: 95%;
+}
+.shoppingCartItemTitle {
+  width: 75%;
+}
+.shoppingCartItemPrice {
+  width: 33%;
+}
+.shoppingCartItemQuantity {
+  width: 50px;
+}
+.buttonDelete {
+  margin-left: 50px;
+  width: 60px;
+  height: 60px;
+  background-color: #b81c1c;
+  color: #e4e4e4;
+  border-radius: 10%;
+}
+/*apartado comprar*/
+.comprar {
+  display: flex;
+  margin-top: 10px;
+  font-family: "josefin sans", sans-serif;
+
+  height: auto;
+  border-top: #000 solid 1px;
+  width: 90%;
+  height: 50px;
+}
+.comprarButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "josefin sans", sans-serif;
+  display: flex;
+  text-align: center;
+  background-color: #212121;
+  color: white;
+  width: 100px;
+  margin-left: 25%;
+  margin-top: 10px;
+}
+.total,
+.shoppingCartTotal,
+.buttoncomprar {
+  margin-top: 10px;
+}
+/* apartado comprar END*/
